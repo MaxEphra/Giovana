@@ -1,100 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giovana Acessórios</title>
+    <title>Giovana acessórios</title>
     <style>
-        /* Estilos básicos */
+        /* Reseta estilos padrões */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, sans-serif;
         }
 
         body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
             justify-content: space-between;
-            background-color: #f4f4f4;
-            color: #333;
+            min-height: 100vh;
         }
 
         header {
             text-align: center;
-            padding: 20px;
-            background-color: #222;
-            color: #fff;
+            background-color: #333;
+            color: white;
+            padding: 1rem;
         }
 
         main {
-            flex-grow: 1;
+            flex: 1;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            padding: 20px;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .instagram-widget {
+            width: 100%;
+            max-width: 500px; /* Limita o tamanho no desktop */
+            margin: 0 auto; /* Centraliza o widget */
         }
 
         footer {
+            background-color: #333;
+            color: white;
             text-align: center;
-            padding: 20px;
-            background-color: #222;
-            color: #fff;
+            padding: 1rem;
         }
 
         .footer-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
             margin-bottom: 10px;
         }
 
         .footer-icons a {
-            margin: 0 10px;
-            display: inline-block;
-            color: inherit;
+            color: white;
+            text-decoration: none;
         }
 
-        .footer-icons svg {
-            width: 24px;
-            height: 24px;
-            fill: #fff;
-            transition: fill 0.3s;
-        }
-
-        .footer-icons a:hover svg {
-            fill: #ff9900;
+        .footer-icons img {
+            width:25px;
+            height: 25px;
         }
 
         footer p {
             font-size: 0.9rem;
         }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header, footer {
+                text-align: center;
+            }
+
+            .instagram-widget {
+                max-width: 100%; /* No mobile, ocupa toda a largura */
+            }
+        }
     </style>
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
 </head>
 <body>
-    <header>
-        <h1>Giovana Acessórios</h1>
-    </header>
-    <main>
-        <!-- Widget do Instagram -->
-        <div class="instagram-widget">
-            <script src="https://static.elfsight.com/platform/platform.js" async></script>
-            <div class="elfsight-app-16f4ba34-ff95-4bde-ae11-6278dfe98291" data-elfsight-app-lazy></div>
-        </div>
-    </main>
-    <footer>
-        <div class="footer-icons">
-            <a href="mailto:contato@exemplo.com" aria-label="Email">
-                <img src="https://cdn.icon-icons.com/icons2/56/PNG/96/metro_email_11435.png" alt="Email" width="24" height="24">
-            </a>
-            <a href="https://wa.me/5500000000000" target="_blank" aria-label="WhatsApp">
-                <img src="https://cdn.icon-icons.com/icons2/41/PNG/96/whichapplication_conversation_email_phone_7097.png" alt="WhatsApp" width="24" height="24">
-            </a>
-            <a href="https://instagram.com/seuperfil" target="_blank" aria-label="Instagram">
-                <img src="https://cdn.icon-icons.com/icons2/1584/PNG/96/3721672-instagram_108066.png" alt="Instagram" width="24" height="24">
-            </a>
-        </div>
-        <p>©2024 | Todos os Direitos Reservados</p>
-    </footer>
-    
+
+<header>
+    <h1>Giovana Acessórios</h1>
+</header>
+
+<main>
+    <!-- Widget do Instagram -->
+    <div class="instagram-widget">
+        <div class="elfsight-app-16f4ba34-ff95-4bde-ae11-6278dfe98291" data-elfsight-app-lazy></div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-icons">
+        <a href="https://wa.me/5511976201285" target="_blank" aria-label="WhatsApp">
+           <img src="https://cdn.icon-icons.com/icons2/373/PNG/128/Whatsapp_37229.png" alt=""> 
+        </a>
+        <a href="https://www.instagram.com/giovana_acessorios01?igsh=Z2ptc3U2bXI0YTZv" target="_blank" aria-label="Instagram">
+            <img src="https://cdn.icon-icons.com/icons2/1211/PNG/128/1491580635-yumminkysocialmedia26_83102.png" alt=""> 
+         </a>
+    </div>
+    <p>&copy; 2024 Giovana Acessórios | Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>
