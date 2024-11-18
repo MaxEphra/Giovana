@@ -1,1 +1,1 @@
-www.GiovanaAcessórios.Site
+www.giovanaacessórios.site
